@@ -1,0 +1,1054 @@
+  /* Variables que usaré en hex
+
+  Maximum Red: #D62828
+  Firebrick: #AC2020
+  Prussian Blue: #003049
+  Orange: #F77F00
+  Maximum Yellow Red: #FCBF49
+  Lemon Meringue: #EAE2B7
+Medium Champagne: #E3D9A0
+  */
+
+  /* efecto1 */
+  .burgerIcon:hover {
+      filter: opacity(.5);
+  }
+
+  /* efecto 2 */
+  * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat',
+          sans-serif;
+  }
+
+  body {
+      background-color: #E3D9A0;
+  }
+
+  .prueba {
+      background-color: blue;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      margin-right: 160px;
+  }
+
+
+  /* ------------------------------------- Start Index Grid */
+  .gridMainContainer {
+      display: grid;
+      grid-template-columns: 0.4fr 1.6fr 1.6fr 0.4fr;
+      grid-template-rows: 0.15fr 1fr;
+      grid-auto-columns: 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+          ". . . ."
+          ". titleContainer categoriesContainer .";
+  }
+
+  .titleContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 0.2fr 1.5fr 1.5fr 0.2fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+          ". . ."
+          "titlesRow titlesRow titlesRow"
+          "followRow followRow followRow"
+          ". . .";
+      grid-area: titleContainer;
+  }
+
+  .titlesRow {
+      grid-area: titlesRow;
+  }
+
+  .followRow {
+      grid-area: followRow;
+  }
+
+  .categoriesContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 15px 15px;
+      grid-auto-flow: row;
+      grid-template-areas:
+          "Cat1 Cat2"
+          "Cat3 Cat4";
+      grid-area: categoriesContainer;
+  }
+
+  .titleCategory {
+      font-size: 20px;
+      margin-bottom: 15px;
+  }
+
+  .Cat1 {
+      grid-area: Cat1;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.32);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.32);
+  }
+
+  .Cat1:hover {
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+
+  .Cat2 {
+      grid-area: Cat2;
+      background-color: #EAE2B7;
+      text-align: center;
+      border-radius: 8px;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.32);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.32);
+  }
+
+  .Cat2:hover {
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Cat3 {
+      grid-area: Cat3;
+      background-color: #EAE2B7;
+      text-align: center;
+      border-radius: 8px;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.32);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.32);
+  }
+
+  .Cat3:hover {
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Cat4 {
+      grid-area: Cat4;
+      background-color: #EAE2B7;
+      text-align: center;
+      border-radius: 8px;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.32);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.32);
+  }
+
+  .Cat4:hover {
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .titleOne {
+      font-size: 40px;
+      margin-right: 180px;
+  }
+
+  .titleTwo {
+      margin-top: 15px;
+  }
+
+  .burgerIcon {
+      margin: auto;
+      height: 300px;
+      justify-self: center;
+  }
+
+  .marketIcon {
+      margin: auto;
+      height: 300px;
+      justify-self: center;
+  }
+
+  .farmacyIcon {
+      margin: auto;
+      height: 300px;
+      justify-self: center;
+  }
+
+  .wineIcon {
+      margin: auto;
+      height: 300px;
+      justify-self: center;
+  }
+
+  /* ------------------------------------ End Index Grid */
+
+  /* Inicio CSS Nav bar */
+  #menu {
+      background: #D62828;
+      color: #FFF;
+      height: 67px;
+      padding-left: 18px;
+      border-radius: 0px;
+  }
+
+  #menu ul,
+  #menu li {
+      margin: 0 auto;
+      padding: 0;
+      list-style: none
+  }
+
+  #menu ul {
+      width: 100%;
+  }
+
+  #menu li {
+      float: left;
+      display: inline;
+      position: relative;
+  }
+
+  #menu a {
+      display: block;
+      line-height: 67px;
+      padding: 0 14px;
+      text-decoration: none;
+      color: #FFFFFF;
+      font-size: 19px;
+      text-transform: uppercase;
+  }
+
+  #menu a.dropdown-arrow:after {
+      content: "\25BE";
+      margin-left: 5px;
+  }
+
+  #menu li a:hover {
+      color: #F2F2F2;
+      background: #AC2020;
+  }
+
+  #menu input {
+      display: none;
+      margin: 0;
+      padding: 0;
+      height: 67px;
+      width: 100%;
+      opacity: 0;
+      cursor: pointer
+  }
+
+  #menu label {
+      display: none;
+      line-height: 67px;
+      text-align: center;
+      position: absolute;
+      left: 35px
+  }
+
+  #menu label:before {
+      font-size: 1.6em;
+      content: "\2261";
+      margin-left: 20px;
+  }
+
+  #menu ul.sub-menus {
+      height: auto;
+      overflow: hidden;
+      width: 170px;
+      background: #444444;
+      position: absolute;
+      z-index: 99;
+      display: none;
+  }
+
+  #menu ul.sub-menus li {
+      display: block;
+      width: 100%;
+  }
+
+  #menu ul.sub-menus a {
+      color: #FFFFFF;
+      font-size: 16px;
+      text-transform: uppercase;
+  }
+
+  #menu li:hover ul.sub-menus {
+      display: block
+  }
+
+  #menu ul.sub-menus a:hover {
+      background: #F2F2F2;
+      color: #444444;
+  }
+
+  @media screen and (max-width: 800px) {
+      #menu {
+          position: relative
+      }
+
+      #menu ul {
+          background: #111;
+          position: absolute;
+          top: 100%;
+          right: 0;
+          left: 0;
+          z-index: 3;
+          height: auto;
+          display: none
+      }
+
+      #menu ul.sub-menus {
+          width: 100%;
+          position: static;
+      }
+
+      #menu ul.sub-menus a {
+          padding-left: 30px;
+      }
+
+      #menu li {
+          display: block;
+          float: none;
+          width: auto;
+      }
+
+      #menu input,
+      #menu label {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block
+      }
+
+      #menu input {
+          z-index: 4
+      }
+
+      #menu input:checked+label {
+          color: white
+      }
+
+      #menu input:checked+label:before {
+          content: "\00d7"
+      }
+
+      #menu input:checked~ul {
+          display: block
+      }
+  }
+
+  /* Fin CSS Nav bar */
+
+  /* Start Restaurantes Grid */
+  .restaurantTitle {
+      font-size: 40px;
+      margin-bottom: 15px;
+      margin-top: 20px;
+      text-align: center;
+  }
+
+  .goBack {
+      text-align: center;
+      text-decoration: none;
+      list-style-type: none;
+  }
+
+  .goBack a {
+      text-decoration: none;
+      list-style-type: none;
+      color: #003049;
+  }
+
+  .gridRestaurantContainer {
+      padding: 0 20px 0 20px;
+      display: grid;
+      grid-template-columns: 0.4fr 1.6fr 1.6fr 0.4fr;
+      grid-template-rows: 0.4fr 0.8fr 1.6fr;
+      grid-auto-columns: 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+          "bannerOne bannerOne bannerOne bannerOne"
+          "foodCategories foodCategories foodCategories foodCategories"
+          "promoRestaurants promoRestaurants promoRestaurants promoRestaurants";
+  }
+
+  .bannerOne {
+      grid-area: bannerOne;
+  }
+
+  .foodCategories {
+      padding: 0 20px 0 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 0.3fr 1.2fr 0.4fr;
+      gap: 7px 20px;
+      grid-auto-flow: row;
+      grid-template-areas:
+          "categTitle categTitle . . . ."
+          "Food1 Food2 Food3 Food4 Food5 Food6"
+          ". . . . . .";
+      grid-area: foodCategories;
+  }
+
+  .Food1 {
+      grid-area: Food1;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Food1 h3 {
+      margin-top: auto;
+  }
+
+
+  .Food2 {
+      grid-area: Food2;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Food3 {
+      grid-area: Food3;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Food4 {
+      grid-area: Food4;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Food5 {
+      grid-area: Food5;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Food6 {
+      grid-area: Food6;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .burgerIcon2 {
+      margin: auto;
+      height: 100px;
+      justify-self: center;
+  }
+
+  .categTitle {
+      grid-area: categTitle;
+      padding: 20px 0 10px 0;
+      font-size: 20px;
+  }
+
+  .promoRestaurants {
+      padding: 0 20px 0 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 0.3fr 1.2fr 1.2fr 1.2fr;
+      grid-auto-columns: 1fr;
+      gap: 20px 20px;
+      grid-auto-flow: row;
+      grid-template-areas:
+          "restTitle restTitle . . . . ."
+          "Rest1-1 Rest1-2 Rest1-3 Rest1-4 Rest1-5 Rest1-6 Rest1-7"
+          "Rest2-1 Rest2-2 Rest2-3 Rest2-4 Rest2-5 Rest2-6 Rest2-7"
+          "Rest3-1 Rest3-2 Rest3-3 Rest3-4 Rest3-5 Rest3-6 Rest3-7";
+      grid-area: promoRestaurants;
+  }
+
+  .restTitle {
+      grid-area: restTitle;
+      font-size: 20px;
+  }
+
+  .Rest1-1 {
+      grid-area: Rest1-1;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Rest1-2 {
+      grid-area: Rest1-2;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Rest1-3 {
+      grid-area: Rest1-3;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Rest1-4 {
+      grid-area: Rest1-4;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Rest1-5 {
+      grid-area: Rest1-5;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Rest1-6 {
+      grid-area: Rest1-6;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Rest1-7 {
+      grid-area: Rest1-7;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Rest2-1 {
+      grid-area: Rest2-1;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Rest2-2 {
+      grid-area: Rest2-2;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Rest2-3 {
+      grid-area: Rest2-3;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Rest2-4 {
+      grid-area: Rest2-4;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Rest2-5 {
+      grid-area: Rest2-5;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Rest2-6 {
+      grid-area: Rest2-6;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Rest2-7 {
+      grid-area: Rest2-7;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Rest3-1 {
+      grid-area: Rest3-1;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Rest3-2 {
+      grid-area: Rest3-2;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Rest3-3 {
+      grid-area: Rest3-3;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Rest3-4 {
+      grid-area: Rest3-4;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Rest3-5 {
+      grid-area: Rest3-5;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Rest3-6 {
+      grid-area: Rest3-6;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+  .Rest3-7 {
+      grid-area: Rest3-7;
+      background-color: #EAE2B7;
+      border-radius: 8px;
+      /* con text-align centro la foto */
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      cursor: pointer;
+  }
+
+
+  /*       End Restaurantes Grid  */
+
+  /* ---------------------------------------------------------------------------------------Start Media Queries */
+  @media screen and (max-width:768px) {
+      .gridRestaurantContainer {
+          display: grid;
+          grid-template-columns: 0.4fr 1.6fr 1.6fr 0.4fr;
+          grid-template-rows: 60px 1.6fr 1fr;
+          gap: 0px 0px;
+          grid-auto-flow: row;
+          grid-template-areas:
+              "bannerOne bannerOne bannerOne bannerOne"
+              "foodCategories foodCategories foodCategories foodCategories"
+              "promoRestaurants promoRestaurants promoRestaurants promoRestaurants";
+      }
+
+      .bannerOne {
+          grid-area: bannerOne;
+      }
+
+      .foodCategories {
+          padding-top: 60px;
+          display: grid;
+          grid-template-columns: 0.3fr 2.4fr 0.3fr;
+          grid-template-rows: 60px 1.3fr 1fr 1fr 1fr 1fr 1fr;
+          gap: 15px 0px;
+          grid-auto-flow: row;
+          grid-template-areas:
+              ". categTitle ."
+              ". Food1 ."
+              ". Food2 ."
+              ". Food3 ."
+              ". Food4 ."
+              ". Food5 ."
+              ". Food6 .";
+          grid-area: foodCategories;
+      }
+
+      .categTitle {
+          grid-area: categTitle;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+
+      .categTitle h3 {
+          font-size: 23px;
+      }
+
+      .Food1 {
+          grid-area: Food1;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+          -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+          box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      }
+
+      .Food2 {
+          grid-area: Food2;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+          -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+          box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      }
+
+      .Food3 {
+          grid-area: Food3;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+          -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+          box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      }
+
+      .Food4 {
+          grid-area: Food4;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+          -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+          box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      }
+
+      .Food5 {
+          grid-area: Food5;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+          -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+          box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      }
+
+      .Food6 {
+          grid-area: Food6;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+          -webkit-box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+          box-shadow: 5px 5px 5px 5px rgba(132, 132, 132, 0.64);
+      }
+
+      .promoRestaurants {
+          padding-top: 60px;
+          display: grid;
+          grid-template-columns: 0.5fr 4.1fr 0.5fr;
+          grid-template-rows: 60px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+          gap: 15px 0px;
+          grid-auto-flow: row;
+          grid-template-areas:
+              ". restTitle ."
+              ". Rest1-1 ."
+              ". Rest1-2 ."
+              ". Rest1-3 ."
+              ". Rest1-4 ."
+              ". Rest1-5 ."
+              ". Rest1-6 ."
+              ". Rest1-7 ."
+              ". Rest2-1 ."
+              ". Rest2-2 ."
+              ". Rest2-3 ."
+              ". Rest2-4 ."
+              ". Rest2-5 ."
+              ". Rest2-6 ."
+              ". Rest2-7 ."
+              ". Rest3-1 ."
+              ". Rest3-2 ."
+              ". Rest3-3 ."
+              ". Rest3-4 ."
+              ". Rest3-5 ."
+              ". Rest3-6 ."
+              ". Rest3-7 .";
+          grid-area: promoRestaurants;
+      }
+
+      .restTitle {
+          grid-area: restTitle;
+      }
+
+      .Rest1-1 {
+          grid-area: Rest1-1;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+      }
+
+      .Rest1-2 {
+          grid-area: Rest1-2;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+      }
+
+      .Rest1-3 {
+          grid-area: Rest1-3;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+      }
+
+      .Rest1-4 {
+          grid-area: Rest1-4;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+      }
+
+      .Rest1-5 {
+          grid-area: Rest1-5;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+      }
+
+      .Rest1-6 {
+          grid-area: Rest1-6;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+      }
+
+      .Rest1-7 {
+          grid-area: Rest1-7;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+      }
+
+      .Rest2-1 {
+          grid-area: Rest2-1;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+      }
+
+      .Rest2-2 {
+          grid-area: Rest2-2;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+      }
+
+      .Rest2-3 {
+          grid-area: Rest2-3;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+      }
+
+      .Rest2-4 {
+          grid-area: Rest2-4;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+      }
+
+      .Rest2-5 {
+          grid-area: Rest2-5;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+      }
+
+      .Rest2-6 {
+          grid-area: Rest2-6;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+      }
+
+      .Rest2-7 {
+          grid-area: Rest2-7;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+      }
+
+      .Rest3-1 {
+          grid-area: Rest3-1;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+      }
+
+      .Rest3-2 {
+          grid-area: Rest3-2;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+      }
+
+      .Rest3-3 {
+          grid-area: Rest3-3;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+      }
+
+      .Rest3-4 {
+          grid-area: Rest3-4;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+      }
+
+      .Rest3-5 {
+          grid-area: Rest3-5;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+      }
+
+      .Rest3-6 {
+          grid-area: Rest3-6;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+      }
+
+      .Rest3-7 {
+          grid-area: Rest3-7;
+          background-color: #EAE2B7;
+          border-radius: 8px;
+          /* con text-align centro la foto */
+          text-align: center;
+      }
+
+  }
+
+  /*---------------------------------------------------------------------------------- flex de mercado*/
+
+
+
+  /* ---------------------------------------------------------------------------------------End Media Queries */
+
+  /* RESTAURANTES:ARREGLAR MEDIA QUERY 422 DE ANCHO, ME ROMPE EL TEXTO DE PRINCIPALES CATEGORIAS*/
